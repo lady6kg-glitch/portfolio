@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мои проекты</title>
     <style>
         body {
@@ -9,6 +10,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 0 10px;
+            background-color: #f4f4f4;
         }
         header, footer {
             text-align: center;
@@ -19,6 +21,7 @@
             border: 1px solid #ddd;
             padding: 15px;
             border-radius: 8px;
+            background-color: #fff;
         }
         h1, h2, h3 {
             margin: 5px 0;
@@ -26,10 +29,11 @@
         /* Адаптивное видео */
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
+            padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
             height: 0;
             overflow: hidden;
             max-width: 100%;
+            margin-top: 10px;
         }
         .video-container iframe {
             position: absolute;
@@ -50,21 +54,19 @@
 <main>
     <h2>Мои проекты</h2>
 
-    <!-- Проект 1 -->
     <div class="project">
         <h3>Проект 1</h3>
-        <p>Описание первого проекта</p>
+        <p>Описание первого проекта (Пример видео)</p>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/ИД_ВИДЕО_1" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- Проект 2 -->
     <div class="project">
         <h3>Проект 2</h3>
-        <p>Описание второго проекта</p>
+        <p>Описание второго проекта (Пример видео)</p>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/ИД_ВИДЕО_2" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </main>
