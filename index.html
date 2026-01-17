@@ -10,7 +10,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 0 10px;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
         }
         header, footer {
             text-align: center;
@@ -19,21 +19,23 @@
         .project {
             margin-bottom: 30px;
             border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 12px;
             background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         h1, h2, h3 {
-            margin: 5px 0;
+            margin: 10px 0;
+            color: #333;
         }
-        /* Адаптивное видео */
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
+            padding-bottom: 56.25%; /* 16:9 */
             height: 0;
             overflow: hidden;
             max-width: 100%;
-            margin-top: 10px;
+            border-radius: 8px;
+            background: #000;
         }
         .video-container iframe {
             position: absolute;
@@ -52,21 +54,31 @@
 </header>
 
 <main>
-    <h2>Мои проекты</h2>
+    <h2 style="text-align: center;">Мои работы</h2>
 
     <div class="project">
-        <h3>Проект 1</h3>
-        <p>Описание первого проекта (Пример видео)</p>
+        <h3>Первый проект</h3>
+        <p>Краткое описание вашего первого видео-проекта.</p>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/I7U4Ma6SICc" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
     <div class="project">
         <h3>Проект 2</h3>
-        <p>Описание второго проекта (Пример видео)</p>
+        <p>Краткое описание вашего второго видео-проекта.</p>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/n8aVS4ffUkk" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 </main>
