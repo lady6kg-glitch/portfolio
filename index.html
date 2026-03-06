@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои проекты</title>
+    <title>Портфолио | Тешебаев Алихан</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,7 +44,7 @@
             height: 100%;
         }
 
-        /* Стили для нового проекта AI */
+        /* Стили для AI проекта */
         .ai-textarea {
             width: 100%;
             height: 120px;
@@ -63,6 +63,11 @@
             border-radius: 8px;
             cursor: pointer;
             font-weight: bold;
+            transition: 0.3s;
+        }
+        .ai-button:hover {
+            background-color: #218838;
+            transform: scale(1.02);
         }
         .ai-result {
             margin-top: 20px;
@@ -74,83 +79,3 @@
         }
     </style>
 </head>
-<body>
-
-<header>
-    <h1>Тешебаев Алихан</h1>
-    <p>Ученик 27 школы</p>
-</header>
-
-<main>
-    <h2 style="text-align: center; margin-bottom: 30px;">Моё портфолио</h2>
-
-    <div class="project">
-        <h3 style="color: #28a745;">Проект 9: AI Lite — Умный сокращатель текста</h3>
-        <p>Вставьте любой длинный текст, и мой ИИ выделит из него только самое важное.</p>
-        
-        <textarea id="aiInput" class="ai-textarea" placeholder="Вставьте ваш текст здесь..."></textarea>
-        
-        <div style="margin-bottom: 15px;">
-            <label>Предложений в результате: </label>
-            <input type="number" id="aiCount" value="3" min="1" max="10" style="width: 45px;">
-        </div>
-
-        <button class="ai-button" onclick="runAI()">🚀 Сократить текст</button>
-
-        <div id="aiResult" class="ai-result">
-            <strong>📌 Результат анализа:</strong>
-            <div id="aiOutput" style="margin-top: 10px; white-space: pre-wrap;"></div>
-        </div>
-    </div>
-
-    <div class="project">
-        <h3>Первый проект</h3>
-        <p>blur,gaussian,median!</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/I7U4Ma6SICc" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="project">
-        <h3>Проект 2</h3>
-        <p>gray.</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/n8aVS4ffUkk" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="project">
-        <h3>Проект 3</h3>
-        <p>sobel x,y.</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/refIORiiUrE" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="project">
-        <h3>Проект 4</h3>
-        <p>Canny</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/hBd4L1VTci4" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="project">
-        <h3>Проект 5</h3>
-        <p>Эксперимент с порогами Canny ДЗ.</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/t2WPoew-0Jk" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="project">
-        <h3>Проект 6</h3>
-        <p>бинаризация.</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/ZbwRQ0Hl1hU" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="project">
-        <h3>Проект 7</h3>
-        <p>Морфологическая очистка изображения: удаление внешнего шума (Open) и запол
