@@ -5,78 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио | Тешебаев Алихан</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 10px;
-            background-color: #f0f2f5;
-            color: #1c1e21;
-        }
-        header, footer {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 20px;
-        }
-        .project {
-            margin-bottom: 30px;
-            border: none;
-            padding: 20px;
-            border-radius: 15px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+        body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; background: #f0f2f5; color: #1c1e21; }
+        header { text-align: center; margin-bottom: 40px; }
+        .project { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 30px; }
         h1 { color: #007bff; }
-        h3 { margin-top: 0; color: #333; }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; 
-            height: 0;
-            overflow: hidden;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-        }
-
-        /* Стили для AI проекта */
-        .ai-textarea {
-            width: 100%; height: 120px; border-radius: 10px;
-            padding: 10px; border: 1px solid #ddd;
-            font-family: inherit; box-sizing: border-box;
-            margin-bottom: 15px;
-        }
-        .ai-button {
-            background-color: #28a745; color: white; border: none;
-            padding: 10px 20px; border-radius: 8px;
-            cursor: pointer; font-weight: bold; transition: 0.3s;
-        }
-        .ai-button:hover { background-color: #218838; transform: scale(1.02); }
-        .ai-result {
-            margin-top: 20px; padding: 15px;
-            background: #f1f8ff; border-radius: 10px;
-            border-left: 5px solid #28a745; display: none;
-        }
+        h3 { color: #333; margin-top: 0; }
+        .ai-section { border-left: 5px solid #28a745; background: #f1f8ff; }
+        textarea { width: 100%; height: 100px; padding: 10px; border-radius: 10px; border: 1px solid #ddd; box-sizing: border-box; }
+        button { background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin-top: 15px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        #aiOutput { margin-top: 15px; font-weight: 500; color: #212529; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Тешебаев Алихан</h1>
-    <p>Ученик школы №27 | Проекты AI Academy</p>
+    <p>Ученик 27 школы | Студент AI Academy</p>
 </header>
 
 <main>
-    <h2 style="text-align: center; margin-bottom: 30px;">Моё портфолио</h2>
+    <div class="project ai-section">
+        <h3 style="color: #28a745;">Проект 9: AI Lite — Сокращатель текста</h3>
+        <p>Мой новый проект: вставь длинный текст, и алгоритм выделит главное.</p>
+        <textarea id="aiInput" placeholder="Вставьте ваш текст здесь..."></textarea>
+        <button onclick="runAI()">🚀 Сократить текст</button>
+        <div id="aiOutput"></div>
+    </div>
 
     <div class="project">
-        <h3 style="color: #28a745;">Проект 9: AI Lite — Умный сокращатель текста</h3>
-        <p>Вставьте длинный текст, и алгоритм выделит главное.</p>
+        <h3>Проект 1: Фильтры</h3>
+        <p>Обработка изображений: blur, gaussian, median.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/I7U4Ma6SICc" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 2: Gray</h3>
+        <p>Перевод изображения в оттенки серого.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/n8aVS4ffUkk" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 3: Sobel</h3>
+        <p>Выделение границ (x, y).</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/refIORiiUrE" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 4: Canny</h3>
+        <p>Детектор границ Кэнни.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/hBd4L1VTci4" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 5: Пороги Canny</h3>
+        <p>Эксперименты с параметрами алгоритма.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/t2WPoew-0Jk" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 6: Бинаризация</h3>
+        <p>Преобразование в черно-белый формат.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ZbwRQ0Hl1hU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 7: Морфология</h3>
+        <p>Очистка изображения от шума.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/I7U4Ma6SICc" allowfullscreen></iframe>
+        </div>
+    </div>
+</main>
+
+<script>
+    function runAI() {
+        const text = document.getElementById('aiInput').value;
+        const out = document.getElementById('aiOutput');
+        if (!text.trim()) return alert("Введи текст!");
         
-        <textarea id="aiInput" class="ai-textarea" placeholder="Вставьте ваш текст здесь..."></textarea>
+        const sentences = text.split(/[.!?]/).filter(s => s.trim().length > 0);
+        const result = sentences.slice(0, 2).join('. ') + (sentences.length > 2 ? '...' : '.');
         
-        <div style="margin-bottom: 15px;">
-            <label>Предложений на выходе: </label>
-            <input type="number" id="aiCount" value="3" min="1" max="10" style="width: 45px
+        out.innerHTML = "<strong>Результат:</strong><br>" + result;
+    }
+</script>
+
+</body>
+</html>
