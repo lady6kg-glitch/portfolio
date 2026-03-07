@@ -38,44 +38,45 @@
         }
         .video-container iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0; width: 100%; height: 100%;
         }
 
         /* Стили для AI проекта */
         .ai-textarea {
-            width: 100%;
-            height: 120px;
-            border-radius: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            font-family: inherit;
-            box-sizing: border-box;
+            width: 100%; height: 120px; border-radius: 10px;
+            padding: 10px; border: 1px solid #ddd;
+            font-family: inherit; box-sizing: border-box;
             margin-bottom: 15px;
         }
         .ai-button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
+            background-color: #28a745; color: white; border: none;
+            padding: 10px 20px; border-radius: 8px;
+            cursor: pointer; font-weight: bold; transition: 0.3s;
         }
-        .ai-button:hover {
-            background-color: #218838;
-            transform: scale(1.02);
-        }
+        .ai-button:hover { background-color: #218838; transform: scale(1.02); }
         .ai-result {
-            margin-top: 20px;
-            padding: 15px;
-            background: #f1f8ff;
-            border-radius: 10px;
-            border-left: 5px solid #28a745;
-            display: none;
+            margin-top: 20px; padding: 15px;
+            background: #f1f8ff; border-radius: 10px;
+            border-left: 5px solid #28a745; display: none;
         }
     </style>
 </head>
+<body>
+
+<header>
+    <h1>Тешебаев Алихан</h1>
+    <p>Ученик школы №27 | Проекты AI Academy</p>
+</header>
+
+<main>
+    <h2 style="text-align: center; margin-bottom: 30px;">Моё портфолио</h2>
+
+    <div class="project">
+        <h3 style="color: #28a745;">Проект 9: AI Lite — Умный сокращатель текста</h3>
+        <p>Вставьте длинный текст, и алгоритм выделит главное.</p>
+        
+        <textarea id="aiInput" class="ai-textarea" placeholder="Вставьте ваш текст здесь..."></textarea>
+        
+        <div style="margin-bottom: 15px;">
+            <label>Предложений на выходе: </label>
+            <input type="number" id="aiCount" value="3" min="1" max="10" style="width: 45px
