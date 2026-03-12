@@ -48,15 +48,19 @@
         .btn {
             display: inline-block;
             margin-top: 15px;
-            padding: 12px 24px;
+            padding: 10px 20px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
         }
         .btn:hover { background-color: #0056b3; }
+        .made-with-heart {
+            font-style: italic;
+            color: #888;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -69,11 +73,10 @@
 <main>
     <h2 style="text-align: center; margin-bottom: 30px;">Мои проекты</h2>
 
-    <div class="project" style="border: 2px solid #007bff; background-color: #f8fbff;">
+    <div class="project" style="border: 2px solid #007bff;">
         <h3>🚀 Итоговый проект: AI Lite — Укоротитель текста</h3>
-        <p>Мой сервис на базе искусственного интеллекта, который автоматически сокращает длинные тексты, оставляя главные мысли. Идеально подходит для быстрой обработки новостей или статей.</p>
-        <p><strong>Технологии:</strong> Python, Gradio, библиотека Sumy (алгоритм LSA).</p>
-        <a href="https://huggingface.co/spaces/Alikhan314/ai-sum-final" target="_blank" class="btn">💻 Запустить мой ИИ онлайн</a>
+        <p>Мой сервис на базе ИИ, который умеет сокращать длинные тексты, оставляя только самую суть. Написан на Python.</p>
+        <a href="https://huggingface.co/spaces/Alikhan314/it-academy-project" target="_blank" class="btn">Запустить мой ИИ проект</a>
     </div>
 
     <div class="project">
@@ -102,7 +105,7 @@
 
     <div class="project">
         <h3>Проект 4: Canny</h3>
-        <p>Детектор границ Кэнни для создания четкого контура объектов.</p>
+        <p>Детектор границ Кэнни для четкого контура.</p>
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/hBd4L1VTci4" allowfullscreen></iframe>
         </div>
@@ -110,7 +113,7 @@
 
     <div class="project">
         <h3>Проект 5: Пороги Canny</h3>
-        <p>Эксперименты с динамическими настройками порогов алгоритма Canny.</p>
+        <p>Эксперименты с настройками порогов алгоритма Canny.</p>
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/t2WPoew-0Jk" allowfullscreen></iframe>
         </div>
@@ -118,4 +121,33 @@
 
     <div class="project">
         <h3>Проект 6: Бинаризация</h3>
-        <p>
+        <p>Перевод изображения в черно-белый формат (Thresholding).</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ZbwRQ0Hl1hU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 7: Морфология (Open)</h3>
+        <p>Удаление внешнего шума с помощью операции Opening.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/y7OdK-cq20Q" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 8: Морфология (Close)</h3>
+        <p>Заполнение внутренних пустот и очистка шума с помощью Closing.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/2egGk5msRVQ" allowfullscreen></iframe>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Алихан Тешебаев. Все права защищены.</p>
+    <p class="made-with-heart">Написано с душой</p>
+</footer>
+
+</body>
+</html>
